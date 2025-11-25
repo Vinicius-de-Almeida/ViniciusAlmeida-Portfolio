@@ -1,0 +1,21 @@
+// src/components/ProjectCard.jsx
+
+export default function ProjectCard({ titulo, descricao, tecnologia, link }) {
+  return (
+    // Um card com fundo branco, bordas arredondadas e sombra
+    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+      {/* O Título */}
+      <h3 className="text-xl font-bold text-gray-800 mb-2">{titulo}</h3>
+
+      {/* A Descrição */}
+      <p className="text-gray-600 mb-4 text-sm">{descricao}</p>
+
+      <p className="text-indigo-400 mb-5 text-sm">{link}</p>
+
+      {/* A etiqueta da tecnologia */}
+      <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+        {tecnologia}
+      </span>
+    </div>
+  );
+}

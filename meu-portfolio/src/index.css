@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Correção para o site ocupar 100% da largura e altura */
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
