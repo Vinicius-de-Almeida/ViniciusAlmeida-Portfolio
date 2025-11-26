@@ -30,7 +30,7 @@ export default function Hero() {
           </button>
           <a
             href="#projetos"
-            className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-bold hover:border-blue-600 hover:text-blue-600 transition-colors"
+            className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-bold hover:border-blue-600 transition-colors"
           >
             Ver Projetos
           </a>
