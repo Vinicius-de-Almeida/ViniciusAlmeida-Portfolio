@@ -6,12 +6,10 @@ import Contato from "./components/Contact.jsx";
 
 export default function App() {
   return (
-    // 'flex flex-col' ajuda a organizar o layout verticalmente
     <div className="bg-gray-50 min-h-screen flex flex-col w-full">
       <Navbar />
 
       {/* 2. Conteúdo Principal (Hero + Projetos) */}
-      {/* 'flex-grow' empurra o footer para baixo se o conteúdo for pequeno */}
       <div className="pt-24 px-6 max-w-6xl mx-auto grow w-full">
         <Hero />
 
@@ -38,7 +36,7 @@ export default function App() {
               descricao="Páginas para uma empresa de Garden Retail."
               tecnologia="HTML + CSS/Sass + JavaScript"
               link=<a
-                href="https://garden-lucky-shrub.vercel.app/contact.html"
+                href="https://garden-lucky-shrub.vercel.app/home.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -59,7 +57,7 @@ export default function App() {
         </section>
 
         {/* 2. SEÇÃO DE CONTATO */}
-        <section id="contato" className="pb-20">
+        <section id="contato" className="pb-20 mx-auto grow w-full">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Contatos</h2>
 
           <Contato
