@@ -1,19 +1,23 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ProjectCard from "./components/ProjectCard";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import ProjectCard from "./components/ProjectCard.jsx";
+import Footer from "./components/Footer.jsx";
 import Contato from "./components/Contact.jsx";
+import Hab from "./components/Hab.jsx";
 
 export default function App() {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col w-full">
       <Navbar />
 
-      {/* 2. Conteúdo Principal (Hero + Projetos) */}
+      {/* 2. Conteúdo Principal (Hero + Projetos + Hab) */}
       <div className="pt-24 px-6 max-w-6xl mx-auto grow w-full">
         <Hero />
 
         <div className="h-px bg-gray-200 my-16"></div>
+
+        <div className="h-auto"></div>
+        <Hab />
 
         <section id="projetos">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">

@@ -1,4 +1,4 @@
-import { useState } from "react"; // <--- ESSA LINHA É OBRIGATÓRIA!
+import { useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
