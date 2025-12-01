@@ -4,23 +4,49 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import Footer from "./components/Footer.jsx";
 import Contato from "./components/Contact.jsx";
 import Hab from "./components/Hab.jsx";
+import { useInView } from "react-intersection-observer";
 
 export default function App() {
+  const options = { triggerOnce: true, threshold: 0.1 };
+  const { ref: heroRef, inView: heroInView } = useInView(options);
+  const { ref: habRef, inView: habInView } = useInView(options);
+  const { ref: projetosRef, inView: projetosInView } = useInView(options);
+  const { ref: contatoRef, inView: contatoInView } = useInView(options);
+
   return (
-    <div className="bg-gray-50 min-h-screen flex flex-col w-full">
+    <div className="bg-linear-to-br from-[#23283C] to-[#1a1f36] min-h-screen flex flex-col w-full">
       <Navbar />
 
       {/* 2. Conteúdo Principal (Hero + Projetos + Hab) */}
       <div className="pt-24 px-6 max-w-6xl mx-auto grow w-full">
-        <Hero />
+        <div
+          ref={heroRef}
+          className={`transition-opacity duration-1000 ${
+            heroInView ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Hero />
+        </div>
 
         <div className="h-px bg-gray-200 my-16"></div>
 
-        <div className="h-auto"></div>
-        <Hab />
+        <div
+          ref={habRef}
+          className={`transition-opacity duration-1000 ${
+            habInView ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Hab />
+        </div>
 
-        <section id="projetos">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">
+        <section
+          id="projetos"
+          ref={projetosRef}
+          className={`m-10 transition-opacity duration-1000 ${
+            projetosInView ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <h2 className="text-3xl font-bold text-[#899AD0] mb-8">
             Meus Projetos
           </h2>
 
@@ -39,18 +65,20 @@ export default function App() {
               titulo="Site Corporativo Lucky Shrub"
               descricao="Páginas para uma empresa de Garden Retail."
               tecnologia="HTML + CSS/Sass + JavaScript"
-              link=<a
-                href="https://garden-lucky-shrub.vercel.app/home.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver Projeto
-              </a>
+              link={
+                <a
+                  href="https://garden-lucky-shrub.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Projeto
+                </a>
+              }
             />
             <ProjectCard
-              titulo="Alex Styles Portfolio"
-              descricao="Site pessoal para Alex Styles."
-              tecnologia="React + Tailwind"
+              titulo="Em Breve"
+              descricao="Em Breve"
+              tecnologia="Em Breve"
               link={
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   Ver Projeto
@@ -61,8 +89,14 @@ export default function App() {
         </section>
 
         {/* 2. SEÇÃO DE CONTATO */}
-        <section id="contato" className="pb-20 mx-auto grow w-full">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Contatos</h2>
+        <section
+          id="contato"
+          ref={contatoRef}
+          className={`pb-20 mx-auto m-10 grow w-full transition-opacity duration-1000 ${
+            contatoInView ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <h2 className="text-3xl font-bold text-[#899AD0] mb-8">Contatos</h2>
 
           <Contato
             Email={

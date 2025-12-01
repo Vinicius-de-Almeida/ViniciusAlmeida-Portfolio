@@ -6,16 +6,16 @@ export default function Hero() {
     <section className="flex flex-col md:flex-row items-center justify-between py-20 gap-10">
       {/* Lado Esquerdo: Texto */}
       <div className="md:w-1/2 space-y-6">
-        <h1 className="text-6xl md:text-6x1 font-bold text-gray-900 leading-tight">
+        <h1 className="text-6xl md:text-6x1 font-bold text-[#899AD0] leading-tight">
           Vinicius Almeida{" "}
-          <span className="text-blue-600">Front End Developer</span>
+          <span className=" text-4xl text-blue-200">Front End Developer</span>
         </h1>
-        <p className="text-lg text-gray-600">
-          <strong className="font-bold text-gray-700">
+        <p className="text-lg text-[#D1D1FF]">
+          <strong className="font-bold text-[#899AD0]">
             Desenvolvedor Front-End
           </strong>{" "}
           com domínio de{" "}
-          <strong className="font-bold text-gray-700">
+          <strong className="font-bold text-[#899AD0]">
             HTML, CSS, Sass, JavaScript e atualmente focado em React e Tailwind
           </strong>
           , integrando lógica de programação a sólidos princípios de design.
@@ -30,7 +30,7 @@ export default function Hero() {
           </button>
           <a
             href="#projetos"
-            className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-bold hover:border-blue-600 transition-colors"
+            className="border-2 border-gray-300 text-blue-600 px-6 py-3 rounded-lg font-bold hover:border-blue-600 transition-colors shadow-lg hover:shadow-blue-500/30 flex items-center justify-center"
           >
             Ver Projetos
           </a>

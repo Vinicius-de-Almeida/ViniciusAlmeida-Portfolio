@@ -21,25 +21,23 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="h-auto mb-25 bg-gray-100 p-10">
+    <div className="h-auto mb-25 p-10">
       {/* Título */}
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+      <h2 className="text-3xl font-bold text-center mb-10 text-[#899AD0]">
         Minhas Habilidades
       </h2>
 
-      {/* Container da Barra Horizontal */}
       <div className="flex flex-wrap justify-center gap-6">
-        {/* 3. O Loop que cria os ícones (Aqui acontece a mágica) */}
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 w-28 h-28 cursor-pointer border border-gray-100"
+            className="flex flex-col items-center bg-blue-900 rounded justify-center p-4 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-400 w-28 h-28 cursor-pointer"
           >
-            {/* O Ícone vindo do array */}
+            {/* Icones */}
             <skill.icon className={`text-5xl mb-2 ${skill.color}`} />
 
             {/* O Nome */}
-            <span className="text-sm font-bold text-gray-600">
+            <span className="text-sm font-bold text-[#D1D1FF]">
               {skill.name}
             </span>
           </div>

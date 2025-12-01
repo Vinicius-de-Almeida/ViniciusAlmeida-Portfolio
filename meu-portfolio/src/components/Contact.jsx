@@ -2,20 +2,20 @@
 
 export default function Contato({ Email, Linkedin, GitHub, Numero }) {
   return (
-    // 1. Adicionado 'w-fit' para o card não esticar 100%
-    // 2. Adicionado 'flex' e 'gap-x-6' para alinhar os itens horizontalmente
-    <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-100 w-fit flex gap-x-6">
-      {/* Item 1: Email (Renderiza a tag <a> passada como prop) */}
-      <div className="text-xl text-blue-700 font-bold">{Email}</div>
+    <div className="bg-white content-center-safe p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border w-full md:w-fit flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+      {/* Item 1: Email */}
 
+      <div className="text-lg md:text-xl text-blue-700 font-bold">{Email}</div>
       {/* Item 2: Linkedin */}
-      <div className="text-xl text-blue-700 font-bold">{Linkedin}</div>
+      <div className="text-lg md:text-xl text-blue-700 font-bold">
+        {Linkedin}
+      </div>
 
       {/* Item 3: GitHub */}
-      <div className="text-xl text-blue-700 font-bold">{GitHub}</div>
+      <div className="text-lg md:text-xl text-blue-700 font-bold">{GitHub}</div>
 
       {/* Item 4: Número de Telefone */}
-      <div className="text-xl text-blue-700 font-bold">{Numero}</div>
+      <div className="text-lg md:text-xl text-blue-700 font-bold">{Numero}</div>
     </div>
   );
 }
