@@ -89,7 +89,11 @@ export default function App() {
               tecnologia="React + Tailwind"
               imagem={imgVorti}
               link={
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://vorti-board.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Ver Projeto
                 </a>
               }
