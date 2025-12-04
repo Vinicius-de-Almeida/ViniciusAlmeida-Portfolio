@@ -7,9 +7,9 @@ import Hab from "./components/Hab.jsx";
 import { useInView } from "react-intersection-observer";
 
 // imagens
-import imgPort from "./assets/Port.jpg";
-import imgLucky from "./assets/Lucky.jpg";
-import imgVorti from "./assets/Vorti.jpg";
+import imgPort from "./assets/port.jpg";
+import imgLucky from "./assets/lucky.jpg";
+import imgVorti from "./assets/vorti.jpg";
 
 export default function App() {
   const options = { triggerOnce: true, threshold: 0.1 };
