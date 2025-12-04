@@ -19,7 +19,9 @@ export default function Navbar() {
           <li className="cursor-pointer hover:text-blue-600">
             <a href="#projetos">Projetos</a>
           </li>
-          <li className="cursor-pointer hover:text-blue-600">Contato</li>
+          <li className="cursor-pointer hover:text-blue-600">
+            <a href="#contato">Contato</a>
+          </li>
         </ul>
 
         {/* --- BOTÃO HAMBÚRGUER (MOBILE) --- */}

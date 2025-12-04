@@ -25,6 +25,7 @@ export default function App() {
       {/* 2. Conteúdo Principal (Hero + Projetos + Hab) */}
       <div className="pt-24 px-6 max-w-6xl mx-auto grow w-full">
         <div
+          id="hero"
           ref={heroRef}
           className={`transition-opacity duration-1000 ${
             heroInView ? "opacity-100" : "opacity-0"
@@ -97,49 +98,48 @@ export default function App() {
         </section>
 
         {/* 2. SEÇÃO DE CONTATO */}
-        <section
-          id="contato"
-          ref={contatoRef}
-          className={`pb-20 mx-auto m-10 grow w-full transition-opacity duration-1000 ${
-            contatoInView ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <h2 className="text-3xl font-bold text-[#899AD0] mb-8">Contatos</h2>
-
-          <Contato
-            Email={
-              <a
-                href="mailto:vca.almeida.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Email
-              </a>
-            }
-            Linkedin={
-              <a
-                href="https://www.linkedin.com/in/vcalmeida/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            }
-            GitHub={
-              <a
-                href="https://github.com/Vinicius-de-Almeida"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            }
-            Numero="(+55) 91 99362-1696"
-          />
+        <section id="contato">
+          <div
+            ref={contatoRef}
+            className={`pb-20 m-10 flex flex-col items-center transition-opacity duration-1000 ${
+              contatoInView ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <h2 className="text-3xl font-bold text-[#899AD0] mb-8">Contatos</h2>
+            <Contato
+              Email={
+                <a
+                  href="mailto:vca.almeida.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Email
+                </a>
+              }
+              Linkedin={
+                <a
+                  href="https://www.linkedin.com/in/vcalmeida/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              }
+              GitHub={
+                <a
+                  href="https://github.com/Vinicius-de-Almeida"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              }
+              Numero="(+55) 91 99362-1696"
+            />
+          </div>
         </section>
       </div>
 
-      {/* Footer fica fora da área de largura máxima para esticar 100% */}
       <Footer />
     </div>
   );
