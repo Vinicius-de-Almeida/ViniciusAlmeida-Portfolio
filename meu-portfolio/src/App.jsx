@@ -6,6 +6,11 @@ import Contato from "./components/Contact.jsx";
 import Hab from "./components/Hab.jsx";
 import { useInView } from "react-intersection-observer";
 
+// imagens
+import imgPort from "./assets/Port.jpg";
+import imgLucky from "./assets/Lucky.jpg";
+import imgVorti from "./assets/Vorti.jpg";
+
 export default function App() {
   const options = { triggerOnce: true, threshold: 0.1 };
   const { ref: heroRef, inView: heroInView } = useInView(options);
@@ -55,6 +60,7 @@ export default function App() {
               titulo="Vinicius Almeida Portfolio"
               descricao="Site pessoal apresentando meu perfil e portfólio."
               tecnologia="React + Tailwind"
+              imagem={imgPort}
               link={
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   Ver Projeto
@@ -62,9 +68,10 @@ export default function App() {
               }
             />
             <ProjectCard
-              titulo="Site Corporativo Lucky Shrub"
-              descricao="Páginas para uma empresa de Garden Retail."
+              titulo="Lucky Shrub"
+              descricao="Site para uma empresa de Garden Design."
               tecnologia="HTML + CSS/Sass + JavaScript"
+              imagem={imgLucky}
               link={
                 <a
                   href="https://garden-lucky-shrub.vercel.app"
@@ -76,9 +83,10 @@ export default function App() {
               }
             />
             <ProjectCard
-              titulo="Em Breve"
-              descricao="Em Breve"
-              tecnologia="Em Breve"
+              titulo="Virtu Board"
+              descricao="Gerenciador de tarefas Kanban para a empresa Virtu"
+              tecnologia="React + Tailwind"
+              imagem={imgVorti}
               link={
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   Ver Projeto

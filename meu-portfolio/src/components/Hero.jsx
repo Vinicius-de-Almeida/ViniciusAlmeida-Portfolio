@@ -8,7 +8,10 @@ export default function Hero() {
       <div className="md:w-1/2 space-y-6">
         <h1 className="text-6xl md:text-6x1 font-bold text-[#899AD0] leading-tight">
           Vinicius Almeida{" "}
-          <span className=" text-4xl text-blue-200">Front End Developer</span>
+          <span className=" text-4xl text-blue-200">
+            {" "}
+            Desenvolvedor Front End
+          </span>
         </h1>
         <p className="text-lg text-[#D1D1FF]">
           <strong className="font-bold text-[#899AD0]">
