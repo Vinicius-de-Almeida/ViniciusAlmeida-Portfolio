@@ -70,7 +70,7 @@ export default function App() {
             />
             <ProjectCard
               titulo="Lucky Shrub"
-              descricao="Site para uma empresa de Garden Design."
+              descricao="Interface responsiva com tema escuro persistente feita para a Lucky Shrub.."
               tecnologia="HTML + CSS/Sass + JavaScript"
               imagem={imgLucky}
               link={
@@ -85,7 +85,7 @@ export default function App() {
             />
             <ProjectCard
               titulo="Virtu Board"
-              descricao="Gerenciador de tarefas Kanban para a empresa Virtu"
+              descricao="Sistema de gestão de tarefas desenvolvido para a empresa Virtu."
               tecnologia="React + Tailwind"
               imagem={imgVorti}
               link={
