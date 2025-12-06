@@ -84,8 +84,8 @@ export default function App() {
               }
             />
             <ProjectCard
-              titulo="Virtu Board"
-              descricao="Sistema de gestão de tarefas desenvolvido para a empresa Virtu."
+              titulo="Vorti Board"
+              descricao="Sistema de gestão de tarefas desenvolvido para a empresa Vorti."
               tecnologia="React + Tailwind"
               imagem={imgVorti}
               link={
