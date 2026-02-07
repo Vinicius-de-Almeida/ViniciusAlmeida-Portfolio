@@ -15,11 +15,11 @@ export default function Hero() {
         </h1>
         <p className="text-lg text-[#D1D1FF]">
           <strong className="font-bold text-[#899AD0]">
-            Desenvolvedor Front-End
+            Desenvolvedor FullStack
           </strong>{" "}
           com domínio de{" "}
           <strong className="font-bold text-[#899AD0]">
-            HTML, CSS, Sass, JavaScript e atualmente focado em React e Tailwind
+            HTML, CSS, Sass, JavaScript, React, Tailwind, Java Springboot.
           </strong>
           , integrando lógica de programação a sólidos princípios de design.
           Sempre em constante evolução para criar mais interfaces modernas,
