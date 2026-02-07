@@ -6,6 +6,9 @@ import {
   FaBootstrap,
   FaReact,
   FaSass,
+  FaJava,
+  DiGit,
+  BiLogoSpringBoot,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 
@@ -18,6 +21,9 @@ export default function Portfolio() {
     { name: "Sass", icon: FaSass, color: "text-pink-500" },
     { name: "React", icon: FaReact, color: "text-blue-400" },
     { name: "Tailwind", icon: RiTailwindCssFill, color: "text-cyan-400" },
+    { name: "Java", icon: FaJava, color: "text-orange-600"},
+    { name: "Git", icon: DiGit, color: "text-white"},
+    { name: "SpringBoot", icon: BiLogoSpringBoot, color: "text-green-400"},
   ];
 
   return (
