@@ -10,7 +10,7 @@ export default function Hero() {
           Vinicius Almeida{" "}
           <span className=" text-4xl text-blue-200">
             {" "}
-            Desenvolvedor Front End
+            Desenvolvedor FullStack
           </span>
         </h1>
         <p className="text-lg text-[#D1D1FF]">
@@ -19,7 +19,7 @@ export default function Hero() {
           </strong>{" "}
           com domínio de{" "}
           <strong className="font-bold text-[#899AD0]">
-            HTML, CSS, Sass, JavaScript, React, Tailwind, Java Springboot.
+            HTML, CSS, Sass, JavaScript, React, Tailwind, Java SpringBoot.
           </strong>
           , integrando lógica de programação a sólidos princípios de design.
           Sempre em constante evolução para criar mais interfaces modernas,
