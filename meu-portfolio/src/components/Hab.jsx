@@ -10,8 +10,8 @@ import {
 } from "react-icons/fa";
 import { RiTailwindCssFill,
        RiSupabaseFill, } from "react-icons/ri";
-import { Digit, } from "react-icons/di";
-import { BilogoSpringBoot, } from "react-icons/bi";
+import { DiGit, } from "react-icons/di";
+import { BiLogoSpringBoot, } from "react-icons/bi";
 
 export default function Portfolio() {
   const skills = [
