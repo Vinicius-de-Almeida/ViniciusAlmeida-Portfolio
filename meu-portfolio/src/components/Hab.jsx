@@ -7,10 +7,11 @@ import {
   FaReact,
   FaSass,
   FaJava,
-  DiGit,
-  BiLogoSpringBoot,
 } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill,
+       RiSupabaseFill, } from "react-icons/ri";
+import { Digit, } from "react-icons/di";
+import { BilogoSpringBoot, } from "react-icons/bi";
 
 export default function Portfolio() {
   const skills = [
