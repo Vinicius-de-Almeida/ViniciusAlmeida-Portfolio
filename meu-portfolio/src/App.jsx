@@ -10,6 +10,7 @@ import { useInView } from "react-intersection-observer";
 import imgPort from "./assets/port.jpg";
 import imgLucky from "./assets/lucky.jpg";
 import imgVorti from "./assets/vorti.jpg";
+import imgCadas from "./assets/cadastro.jpg";
 
 export default function App() {
   const options = { triggerOnce: true, threshold: 0.1 };
@@ -94,6 +95,17 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  Ver Projeto
+                </a>
+              }
+            />
+            <ProjectCard
+              titulo="Cadastro de Usuários - API REST"
+              descricao="API REST para gerenciamento de usuários com Spring Boot 4, JPA e H2. Implementa CRUD completo seguindo arquitetura em camadas."
+              tecnologia="Java + Spring Boot 4 + JPA + H2"
+              imagem={imgCadas}
+              link={
+                <a href="https://github.com/Vinicius-de-Almeida/cadastro-usuario" target="_blank" rel="noopener noreferrer">
                   Ver Projeto
                 </a>
               }
