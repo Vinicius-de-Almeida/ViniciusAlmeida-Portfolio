@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import imgPort from "./assets/port.jpg";
 import imgLucky from "./assets/lucky.jpg";
 import imgVorti from "./assets/vorti.jpg";
-import imgCadas from "./assets/cadastro.jpg";
+import imgCadas from "./assets/cadastro.png";
 
 export default function App() {
   const options = { triggerOnce: true, threshold: 0.1 };
